@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset='utf-8'>
+
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>Adivina El Numero!</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet">
+
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+  
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+</head>
+
+<body>
+    <main>
+
+        <div class="titulo">
+
+            <h1>Juegemos a Adivinar el Numero!</h1>
+
+        </div>
+        
+        <div class="reglas">
+            <ol>
+
+                <li>1) Tenes que adivinar un número aleatorio entre 1 y 100, ambos
+                incluidos.</li>
+                <li>2) Se te darán 10 posibilidades para adivinar el número
+                correctamente</li>
+                <li>3) Si aciertas el numero en tus 10 oportunidades, ganas, o mejor
+                suerte para la próxima vez.</li>
+
+            </ol>
+
+        </div>
+
+        <div class="contenedorStart">
+
+        <button id="comenzar">Start Game</button>
+
+    </div>
+        <div class="game">
+
+            <form id="formulario">
+
+                <input type="number" id="adivina" min="1" max="100">
+                <input type="button" id="submit" value="Check!">
+
+            </form>
+
+            <div id="numerosIngresados">
+                
+                <h4 class="textoIngresaste">Ingresaste estos numeros: </h4>
+
+                <b id="numerosPrevios"></b>
+
+                <div id="respuesta"></div>
+                
+            </div>
+
+            
+        
+
+    </main>
+
+    <script src='script.js'></script>   
+
+</body>
+
+</html>
